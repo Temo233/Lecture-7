@@ -13,8 +13,8 @@ img {
     z-index: 10;
     position: absolute;
     left: 20%;
-    top: 34%;
-    animation: meteo 10s infinite;
+    top: 45%;
+    animation: meteo 5s 1;
    animation-timing-function: linear;
    animation-direction: alternate;
 }
@@ -53,13 +53,16 @@ img {
     z-index: 20;
     top: 60%;
     left: 10%;
-    animation:eart 8s infinite;
+    animation:eart 5s 1;
   animation-timing-function: linear;
-  animation-direction: alternate;;
+  animation-direction: alternate;
+  background-image: url(Images/explosion.png);
+  background-size: cover;
 }
 @keyframes eart{
-    from{top: 70%;}
-    to{top: 60%;}
+    from{top: 70%; background-image: url(Images/earth.jpg);}
+    to{top: 60%; background-image: url(Images/earth.jpg); }
+    
 }
 .rocket {
    height: 240px;
@@ -68,4 +71,16 @@ img {
    z-index: 40;
    left: 60%;
    top: 30%;;
+}
+.explosion{
+    animation-delay: 5s;
+    z-index: 90;
+    padding-bottom: 70px;
+    padding-left: 100px;
+}
+.bg-image{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(Images/galaxy.jpg);
+    background-size: cover;
 }
