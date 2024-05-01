@@ -1,0 +1,71 @@
+.section {
+    background-image: url(../Images/galaxy.jpg);
+    height: 1000px;
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+
+}
+.meteor {
+    width: 350px;
+    height: 300px;
+    z-index: 10;
+    position: absolute;
+    left: 20%;
+    top: 34%;
+    animation: meteo 10s infinite;
+   animation-timing-function: linear;
+   animation-direction: alternate;
+}
+@keyframes meteo {
+    from{top: 10%;}
+    to{top: 50%;}
+ }
+.galaxy {
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.astrounaunt{
+    width: 70px;
+    height: 120px;
+    position: absolute;
+    z-index: 30;
+    left: 65%;
+    top: 33%;
+    animation:astro 7s infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+@keyframes astro {
+   from{left: 65%;}
+   to{left: 90%;}
+}
+.earth {
+    height: 300px;
+    width: 350px;
+    position: absolute;
+    z-index: 20;
+    top: 60%;
+    left: 10%;
+    animation:eart 8s infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;;
+}
+@keyframes eart{
+    from{top: 70%;}
+    to{top: 60%;}
+}
+.rocket {
+   height: 240px;
+   width: 180px;
+   position: absolute;
+   z-index: 40;
+   left: 60%;
+   top: 30%;;
+}
